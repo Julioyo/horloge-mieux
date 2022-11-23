@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="https://icons.iconarchive.com/icons/vcferreira/firefox-os/256/clock-icon.png"
+    />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>L'Horloge Mieux</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      <center>
+        <div id="clock">
+          0:00:00
+          <script src="script.js"></script>
+        </div>
+        <h1 id="title">Horloge Mieux</h1>
+        <h3 id="title">Pour prouver ma supériorité à Yezi.</h3>
+        <h4 id="title">
+          Aucune horloge mécanique antérieure au XIVe siècle ne nous est
+          parvenue, mais plusieurs mentions dans des sources manuscrites
+          révèlent quelques-uns des premiers temps de l'horloge.
+        </h4>
+        <img
+          src="https://www.picclickimg.com/8uQAAOSw37tf3NVK/Horloge-Ancienne-en-bois-style-Louis-XVI-decoration.jpg"
+        />
+        <div id="date">
+          <script>
+            var maintenant = new Date();
+            var jour = maintenant.getDate();
+            var mois = maintenant.getMonth() + 1;
+            var an = maintenant.getFullYear();
+            document.write(jour, "/", mois, "/", an);
+          </script>
+
+        </div>
+        <h2 id="title">
+          Je mets de l'audio parce que je fais de la musique aussi.
+        </h2>
+          <audio controls>
+          <source src="https://cdn.glitch.global/d47ae35a-62cc-4119-8331-c41af6139d1c/jay%20z%20public%20service%20announcement.mp3?v=1669232184445">
+          </audio>
+      </center>
+      
+    </h1>
+  </body>
+</html>
