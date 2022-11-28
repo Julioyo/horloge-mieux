@@ -186,7 +186,7 @@ h2 {
   font-family: "Segoe UI";
 }
 
-#title {
+.title_ {
   color: #f7f7f7;
 }
 
@@ -196,7 +196,7 @@ h2 {
   font-family: "Segoe UI";
 }
 
-#ico {
+.ico {
   width: 60px;
 }
 
